@@ -1,0 +1,19 @@
+<actions>
+<!--    <action intentName="actions.intent.VIEW">-->
+    <action intentName="android.intent.action.VIEW">
+        <fulfillment urlTemplate="https://mayankrastogi.com/ulta-dare{?product,brand,color,price}">
+            <parameter-mapping
+                intentParameter="product"
+                urlParameter="product"/>
+            <parameter-mapping
+                intentParameter="brand"
+                urlParameter="brand"/>
+            <parameter-mapping
+                intentParameter="color"
+                urlParameter="color"/>
+            <parameter-mapping
+                intentParameter="price"
+                urlParameter="price"/>
+        </fulfillment>
+    </action>
+</actions>
